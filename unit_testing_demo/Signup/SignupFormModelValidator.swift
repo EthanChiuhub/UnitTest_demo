@@ -13,11 +13,15 @@ final class SignupFormModelValidator {
     public func isFirstNameValid(firstName: String) -> Bool {
         var returnValue = true
         
-        if firstName.isEmpty {
+        if firstName.count < SignupConstants.firstNameMinLenghth || firstName.count > SignupConstants.firstNameMaxLength {
             returnValue = false
         }
         
         return returnValue
+    }
+    
+    public func doPasswordsMatch(password: String, repeatPassword: String) -> Bool { 
+        return password == repeatPassword
     }
     
 }

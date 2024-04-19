@@ -71,6 +71,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA1B23AC2BCFC53800157BEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAB5E2882BC4F24F00D52927 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AA1B23AD2BCFC57100157BEE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AAB5E2A92BC4F3C600D52927 /* SignupWebServeice.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AA1B23AE2BCFC59000157BEE /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				AA1B23B02BCFC5A200157BEE /* Network */,
+				AA1B23AF2BCFC59B00157BEE /* Models */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		AA1B23AF2BCFC59B00157BEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAB5E2B52BC50D4800D52927 /* SignupFormModelValidatorTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA1B23B02BCFC5A200157BEE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AAB5E2992BC4F31C00D52927 /* SingupWebServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		AAB5E2782BC4F24F00D52927 = {
 			isa = PBXGroup;
 			children = (
@@ -95,15 +136,10 @@
 				AAB5E2B12BC50C0200D52927 /* Signup */,
 				AAB5E2842BC4F24F00D52927 /* AppDelegate.swift */,
 				AAB5E2862BC4F24F00D52927 /* SceneDelegate.swift */,
-				AAB5E2882BC4F24F00D52927 /* ViewController.swift */,
 				AAB5E28A2BC4F24F00D52927 /* Main.storyboard */,
 				AAB5E28D2BC4F25000D52927 /* Assets.xcassets */,
 				AAB5E28F2BC4F25000D52927 /* LaunchScreen.storyboard */,
 				AAB5E2922BC4F25000D52927 /* Info.plist */,
-				AAB5E2A92BC4F3C600D52927 /* SignupWebServeice.swift */,
-				AAB5E2AB2BC4F48F00D52927 /* SingupFormRequestModel.swift */,
-				AAB5E2AD2BC50B4100D52927 /* SignupResponseModel.swift */,
-				AAB5E2AF2BC50BA100D52927 /* SignupError.swift */,
 			);
 			path = unit_testing_demo;
 			sourceTree = "<group>";
@@ -111,8 +147,7 @@
 		AAB5E2A02BC4F33B00D52927 /* unit_testing_demoTests */ = {
 			isa = PBXGroup;
 			children = (
-				AAB5E2992BC4F31C00D52927 /* SingupWebServiceTests.swift */,
-				AAB5E2B52BC50D4800D52927 /* SignupFormModelValidatorTests.swift */,
+				AA1B23AE2BCFC59000157BEE /* Signup */,
 			);
 			path = unit_testing_demoTests;
 			sourceTree = "<group>";
@@ -120,6 +155,8 @@
 		AAB5E2B12BC50C0200D52927 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				AA1B23AD2BCFC57100157BEE /* Network */,
+				AA1B23AC2BCFC53800157BEE /* Controllers */,
 				AAB5E2B22BC50C1000D52927 /* Models */,
 				AAB5E2B72BC52EB300D52927 /* SignupFormModelValidator.swift */,
 			);
@@ -130,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				AAB5E2B32BC50C3200D52927 /* SignupConstants.swift */,
+				AAB5E2AB2BC4F48F00D52927 /* SingupFormRequestModel.swift */,
+				AAB5E2AD2BC50B4100D52927 /* SignupResponseModel.swift */,
+				AAB5E2AF2BC50BA100D52927 /* SignupError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
